@@ -29,3 +29,6 @@ setopt auto_cd
 
 # disable ctrl+s, ctrl+q
 setopt no_flow_control
+
+# ホスト名を消す
+export PS1="%~ %n "
