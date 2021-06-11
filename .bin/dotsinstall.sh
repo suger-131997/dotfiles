@@ -1,13 +1,12 @@
 #!/bin/bash
 set -ue
 
-
 DOTPATH=$HOME/dotfiles
 
 source $DOTPATH/.bin/packageinstall.sh
 
 command zsh
-command chsh -s $(which zsh)
+source $DOTPATH/.bin/changeshell.sh
 
 source $DOTPATH/.bin/zshinstall.sh
 
@@ -17,7 +16,7 @@ for fpath in $DOTPATH/.??* ; do
     [ "$f" = ".bin" ] && continue
     [ "$f" = ".gitignore" ] && continue
 
-    command ln -snfv "$DOTPATH/$f" "$HOME/$f"
+    command cat "$DOTPATH/$f" > "$HOME/$f"
 done
 
 command echo ""
