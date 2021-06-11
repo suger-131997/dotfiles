@@ -5,7 +5,6 @@ DOTPATH=$HOME/dotfiles
 
 source $DOTPATH/.bin/packageinstall.sh
 
-command zsh
 source $DOTPATH/.bin/changeshell.sh
 
 source $DOTPATH/.bin/zshinstall.sh
