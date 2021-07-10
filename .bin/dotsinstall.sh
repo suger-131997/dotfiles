@@ -15,8 +15,11 @@ for fpath in $DOTPATH/.??* ; do
     [ "$f" = ".bin" ] && continue
     [ "$f" = ".gitignore" ] && continue
 
-    command cat "$DOTPATH/$f" > "$HOME/$f"
+    #command cat "$DOTPATH/$f" > "$HOME/$f"
 done
+
+command cat "$DOTPATH/.zshrc" > "$HOME/.zshrc"
+
 
 command echo ""
 command echo "#####################################################"
