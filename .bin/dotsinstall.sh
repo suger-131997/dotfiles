@@ -18,7 +18,7 @@ for fpath in $DOTPATH/.??* ; do
     #command cat "$DOTPATH/$f" > "$HOME/$f"
 done
 
-command cat "$DOTPATH/.zshrc" > "$HOME/.zshrc"
+command ln -fs ~/dotfiles/.zshrc .
 
 
 command echo ""
