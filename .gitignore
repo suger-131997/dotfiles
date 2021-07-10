@@ -65,5 +65,3 @@
 !/LICENSE
 !.gitignore
 !.gitkeep
-
-!install.sh
