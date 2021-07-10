@@ -3,7 +3,7 @@ set -ue
 
 DOTPATH=$HOME/dotfiles
 
-command touch /root/.zsh/foo
+command mkdir ~/.zshssssss
 command touch /root/bar
 
 source $DOTPATH/.bin/packageinstall.sh
