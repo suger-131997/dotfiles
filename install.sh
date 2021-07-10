@@ -1,0 +1,1 @@
+command mkdir ~/hoge
