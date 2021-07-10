@@ -19,7 +19,7 @@ for fpath in $DOTPATH/.??* ; do
 done
 
 command ln -fs ~/dotfiles/.zshrc .
-
+command touch hoge
 
 command echo ""
 command echo "#####################################################"
