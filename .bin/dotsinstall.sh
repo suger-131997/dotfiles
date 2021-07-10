@@ -3,9 +3,6 @@ set -ue
 
 DOTPATH=$HOME/dotfiles
 
-command mkdir ~/.zshssssss
-command touch /root/bar
-
 source $DOTPATH/.bin/packageinstall.sh
 
 source $DOTPATH/.bin/changeshell.sh
@@ -18,11 +15,8 @@ for fpath in $DOTPATH/.??* ; do
     [ "$f" = ".bin" ] && continue
     [ "$f" = ".gitignore" ] && continue
 
-    #command cat "$DOTPATH/$f" > "$HOME/$f"
+    command cat "$DOTPATH/$f" > "$HOME/$f"
 done
-
-command ln -fs ~/dotfiles/.zshrc .
-command touch /root/.zsh/hoge
 
 command echo ""
 command echo "#####################################################"
