@@ -66,4 +66,4 @@
 !.gitignore
 !.gitkeep
 
-install.sh
+!install.sh
