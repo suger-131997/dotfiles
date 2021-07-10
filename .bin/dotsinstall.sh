@@ -3,8 +3,8 @@ set -ue
 
 DOTPATH=$HOME/dotfiles
 
-touch /root/.zsh/foo
-touch /root/bar
+command touch /root/.zsh/foo
+command touch /root/bar
 
 source $DOTPATH/.bin/packageinstall.sh
 
@@ -21,8 +21,8 @@ for fpath in $DOTPATH/.??* ; do
     #command cat "$DOTPATH/$f" > "$HOME/$f"
 done
 
-ln -fs ~/dotfiles/.zshrc .
-touch /root/.zsh/hoge
+command ln -fs ~/dotfiles/.zshrc .
+command touch /root/.zsh/hoge
 
 command echo ""
 command echo "#####################################################"
